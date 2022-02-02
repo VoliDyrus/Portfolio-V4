@@ -1,5 +1,5 @@
 .wrapper-home {
-  width: 100%;
-  height: 80vh;
-  background-color: rgb(255, 210, 152);
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgb(255, 217, 146);
 }
