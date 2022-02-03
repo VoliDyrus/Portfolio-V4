@@ -31,20 +31,23 @@ function SideMenu() {
   const [isOpen, setIsOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-
+  let zIndex = "";
+  isOpen ? (zIndex = "front") : (zIndex = "behind");
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-      className="nav"
-    >
-      <motion.div className="background" variants={sidebar} />
-
-      <MenuToggle toggle={() => setIsOpen()} />
-      <Navigation />
-    </motion.nav>
+    <>
+      <motion.nav
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        custom={height}
+        ref={containerRef}
+        className={`nav ${zIndex}`}
+      >
+        <motion.div className="background" variants={sidebar}>
+          <MenuToggle toggle={() => setIsOpen()} />
+          <Navigation />
+        </motion.div>
+      </motion.nav>
+    </>
   );
 }
 

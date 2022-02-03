@@ -1,5 +1,30 @@
 .wrapper-home {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   overflow-x: hidden;
-  background-color: rgb(255, 217, 146);
+  background-color: rgba(0, 0, 0, 0.932);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80vw;
+  height: 40vh;
+  margin: auto;
+}
+
+.title {
+  font-size: 5em;
+  color: white;
+}
+
+.description {
+  font-size: 4em;
+  color: white;
+}
+
+.ctc-shortcut {
 }

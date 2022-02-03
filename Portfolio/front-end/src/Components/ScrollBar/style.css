@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+#progressBarContainer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  height: 8px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.452);
+  width: 80%;
+  top: 3.5%;
+  right: 10vw;
+}
+
+#progressBar {
+  background: black;
+  transform-origin: top left;
+  border-radius: 10px;
+  transform: scale(0, 0);
+  opacity: 1;
+}
+
+#progressBar {
+  height: 2px;
+}

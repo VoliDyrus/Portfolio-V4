@@ -9,11 +9,7 @@ export const SidebarData = [
     title: "About Me",
     url: "#about",
   },
-  {
-    id: 3,
-    title: "Resume",
-    url: "#resume",
-  },
+
   {
     id: 4,
     title: "My Work",
